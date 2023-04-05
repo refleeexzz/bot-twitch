@@ -12,44 +12,44 @@ const client = new tmi.Client({
 client.connect();
 
 client.on('message', (channel, tags, message, self) => {
-	// Ignore echoed messages.
+	
 	if(self) return;
 
 	if(message.toLowerCase() === '!comandos') {
-		// "@alca, heya!"
+		
 		client.say(channel, `@${tags.username}, !ovelha, !elo, pprt e mainsamira, os dois ultimos comandos não precisa do !`);
 	}
 });
 client.connect();
 
 client.on('message', (channel, tags, message, self) => {
-	// Ignore echoed messages.
+	
 	if(self) return;
 
 	if(message.toLowerCase() === 'mainsamira') {
-		// "@alca, heya!"
+		
 		client.say(channel, `@${tags.username}, samira é um putinho`);
 	}
 });
 client.connect();
 
 client.on('message', (channel, tags, message, self) => {
-	// Ignore echoed messages.
+	
 	if(self) return;
 
 	if(message.toLowerCase() === 'pprt') {
-		// "@alca, heya!"
+		
 		client.say(channel, `@${tags.username}, oii vc ta solteiro`);
 	}
 });
 client.connect();
 
 client.on('message', (channel, tags, message, self) => {
-	// Ignore echoed messages.
+	
 	if(self) return;
 
 	if(message.toLowerCase() === 'k') {
-		// "@alca, heya!"
+		
 		client.say(channel, `@${tags.username}, isso mesmo ri mesmo safadinho piranho`);
 	}
 });
@@ -57,11 +57,11 @@ client.on('message', (channel, tags, message, self) => {
 client.connect();
 
 client.on('message', (channel, tags, message, self) => {
-	// Ignore echoed messages.
+	
 	if(self) return;
 
 	if(message.toLowerCase() === '!elo') {
-		// "@alca, heya!"
+	
 		client.say(channel, `@${tags.username}, Sosa Ama lala Grandmaster 830lp`);
 	}
 });
